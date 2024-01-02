@@ -1,0 +1,13 @@
+// Navbar
+Logo left | Navbar | searchbox
+
+// Contents
+Depend on page content 
+    - /home 
+    - /products
+    - /about
+    - /contact
+
+// Footer
+Catagories & shortcut link
+Copyright mark
