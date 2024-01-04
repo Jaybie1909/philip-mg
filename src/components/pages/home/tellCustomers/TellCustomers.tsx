@@ -1,6 +1,6 @@
 const TellCustomers = () => {
   return (
-    <div className="h-[150px] bg-blue-100 px-[5%] flex items-center">
+    <div className="h-[150px] bg-blue-100 px-[5%] flex items-center justify-center">
       <div className="">
         <h2 className="text-center text-xl font-bold lg:text-2xl">
           Project Motorcycle & Powersport Thailand
