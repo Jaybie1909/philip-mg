@@ -38,10 +38,24 @@ interface showroomInterface {
   sine: string;
 }
 
+interface shopInterface {
+  url: string;
+  name: string;
+  alt: string;
+}
+
+interface relativePicInterface {
+  url: string;
+  alt: string;
+  name: string;
+}
+
 export type {
   bikeDataInterface,
   relatedBikeInterface,
   coverCaroselInterface,
   brandsInterface,
   showroomInterface,
+  shopInterface,
+  relativePicInterface,
 };

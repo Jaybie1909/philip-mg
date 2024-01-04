@@ -4,6 +4,8 @@ import {
   coverCaroselInterface,
   brandsInterface,
   showroomInterface,
+  shopInterface,
+  relativePicInterface,
 } from "./interfaceFakeAPI";
 
 const relatedBike: relatedBikeInterface[] = [
@@ -570,4 +572,71 @@ const showroom: showroomInterface[] = [
   },
 ];
 
-export { relatedBike, bikeData, coverCarosel, brands, showroom };
+const frontShop: shopInterface[] = [
+  {
+    url: "src/assets/images/shop/-1x-1.jpg",
+    alt: "bigbike shop",
+    name: "bigbike shop",
+  },
+  {
+    url: "src/assets/images/shop/HD-training--1.jpg",
+    alt: "bigbike shop",
+    name: "bigbike shop",
+  },
+  {
+    url: "src/assets/images/shop/shop.jpg",
+    alt: "bigbike shop",
+    name: "bigbike shop",
+  },
+];
+const maintenanceShop: shopInterface[] = [
+  {
+    url: "src/assets/images/shop/maintenance/188-Motorcycle-Maintenance-Repair.jpg",
+    alt: "maintenance shop",
+    name: "maintenance shop",
+  },
+  {
+    url: "src/assets/images/shop/maintenance/istockphoto-1318840986-170667a.webp",
+    alt: "maintenance shop",
+    name: "maintenance shop",
+  },
+  {
+    url: "src/assets/images/shop/maintenance/POWR SCC 03648_v2.jpg",
+    alt: "maintenance shop",
+    name: "maintenance shop",
+  },
+  {
+    url: "src/assets/images/shop/maintenance/Service_Full_2_875_v5-e1625796185711.jpg",
+    alt: "maintenance shop",
+    name: "maintenance shop",
+  },
+];
+
+const relativePic: relativePicInterface[] = [
+  {
+    url: "src/assets/images/shop/relative/groupTravel.webp",
+    alt: "group travel",
+    name: "group travel",
+  },
+  {
+    url: "src/assets/images/shop/relative/maintenance.webp",
+    alt: "maintenance",
+    name: "maintenance bike",
+  },
+  {
+    url: "src/assets/images/shop/relative/washTheBike.jpg",
+    alt: "washing bike",
+    name: "washing bike",
+  },
+];
+
+export {
+  relatedBike,
+  bikeData,
+  coverCarosel,
+  brands,
+  showroom,
+  frontShop,
+  maintenanceShop,
+  relativePic,
+};

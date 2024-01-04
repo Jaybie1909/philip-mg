@@ -1,7 +1,14 @@
-import React from "react";
-
+import FullPicCarousel from "./fullPicCarousel/FullPicCarousel";
+import ProfessionalUsedCarVendor from "./professionalUsedCarVendor/ProfessionalUsedCarVendor";
+import RelativeStories from "./relativeStories/RelativeStories";
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <FullPicCarousel />
+      <ProfessionalUsedCarVendor />
+      <RelativeStories />
+    </div>
+  );
 };
 
 export default About;

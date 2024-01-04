@@ -16,13 +16,13 @@ const CarouselBottom = () => {
     <div>
       <div className="relative overflow-hidden bg-[#1C5696] ">
         <div
-          className="h-[284.19px] flex gap-5 items-center z-50 transition delay-150 duration-300 ease-in-out"
+          className="h-[150px] lg:h-[284.19px] md:h-[200px] flex gap-5 items-center z-50 transition delay-150 duration-300 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {relatedBike.map((item, index) => (
             <a
               href="#"
-              className="min-w-[300px] flex justify-center items-center"
+              className="lg:min-w-[300px] md:min-w-[200px] min-w-[150px] flex justify-center items-center"
               key={index}
             >
               <img

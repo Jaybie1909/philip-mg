@@ -24,7 +24,7 @@ const AboutUs = () => {
           <div>
             <a href="/about-us">
               <button className="text-xl scale-95 hover:scale-105 active:scale-100 transition-all ease-linear duration-200">
-                Learn More
+                Learn More{" <<<"}
               </button>
             </a>
           </div>

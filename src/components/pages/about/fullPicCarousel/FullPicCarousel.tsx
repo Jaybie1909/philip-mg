@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
-import { coverCarosel } from "@/assets/fakeAPI/FakeAPI";
+import { maintenanceShop } from "@/assets/fakeAPI/FakeAPI";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { GoDot } from "react-icons/go";
 
-const CarouselPictureShow = () => {
+const FullPicCarousel = () => {
   const [current, setCurrent] = useState(0);
 
   const nextPic = () => {
-    if (current === coverCarosel.length - 1) {
+    if (current === maintenanceShop.length - 1) {
       setCurrent(0);
     } else setCurrent(current + 1);
   };
   const prePic = () => {
     if (current === 0) {
-      setCurrent(coverCarosel.length - 1);
+      setCurrent(maintenanceShop.length - 1);
     } else setCurrent(current - 1);
   };
 
@@ -25,13 +25,13 @@ const CarouselPictureShow = () => {
   }, [current]);
 
   return (
-    <div className="w-[80%] m-auto overflow-hidden ">
+    <div className="w-[100%] m-auto overflow-hidden ">
       <div className="relative">
         <div
           className="flex my-2 items-center transition-transform duration-300 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {coverCarosel.map((item, index) => {
+          {maintenanceShop.map((item, index) => {
             return (
               <a
                 href="/"
@@ -40,7 +40,7 @@ const CarouselPictureShow = () => {
               >
                 <img
                   src={item.url}
-                  alt={item.tags[0]}
+                  alt={item.alt}
                   key={`cover-key-${index}`}
                   className="min-w-[100%] "
                 />
@@ -48,9 +48,24 @@ const CarouselPictureShow = () => {
             );
           })}
         </div>
+        <div className="absolute top-0 text-center ">
+          <div className="bg-slate-100 bg-opacity-60">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold pt-3 px-[4%] transition-all duration-300 ease-in-out">
+              We are professional on bigbike field.
+            </h1>
+            <p className="text-sm sm:text-base lg:text-lg font-semibold py-5 px-[5%] text-start transition-all duration-300 ease-in-out">
+              &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Laudantium, labore
+              ipsam, nulla voluptas porro, quis est et numquam in consequuntur
+              veritatis consectetur eligendi. Nisi deleniti officiis eum rem
+              atque. Deserunt, a hic ex adipisci quam vero molestiae totam illum
+              veritatis.
+            </p>
+          </div>
+        </div>
         <div className="absolute flex w-[100%] justify-center bottom-3">
           <div className="bg-gray-500 bg-opacity-50 flex rounded-xl px-1">
-            {coverCarosel.map((item, index) => {
+            {maintenanceShop.map((item, index) => {
               return (
                 <button
                   onClick={() => setCurrent(index)}
@@ -86,4 +101,4 @@ const CarouselPictureShow = () => {
   );
 };
 
-export default CarouselPictureShow;
+export default FullPicCarousel;

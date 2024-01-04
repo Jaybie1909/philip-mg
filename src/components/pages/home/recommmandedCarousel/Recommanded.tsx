@@ -1,12 +1,12 @@
 import { bikeData } from "@/assets/fakeAPI/FakeAPI";
 import { useEffect, useState } from "react";
 
-const CardComponent = () => {
+const Recommanded = () => {
   const [current, setCurrent] = useState(0);
   const [isOver, setIsOver] = useState(false);
 
   const fwCarousel = () => {
-    if (current === bikeData.length / 10) {
+    if (current >= bikeData.length / 10) {
       setCurrent(0);
     } else setCurrent(current + 0.03);
   };
@@ -123,4 +123,4 @@ const CardComponent = () => {
   );
 };
 
-export default CardComponent;
+export default Recommanded;
