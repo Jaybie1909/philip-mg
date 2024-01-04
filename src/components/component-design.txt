@@ -1,0 +1,15 @@
+// Navbar
+Logo left | Navbar | searchbox
+
+// Contents
+Depend on page content 
+    - /home 
+    - /products
+    - /about
+    - /contact
+
+// Footer
+Catagories & shortcut link
+Copyright mark
+
+https://media2-production.mightynetworks.com/asset/7bb8549c-96d5-4b0a-9abc-ea7e337ab7d8/Car_Showroom_Website.pdf?_gl=1*wo1z6o*_ga*MTUyNzA2Mjc5Ny4xNjg4MzA4MDU2*_ga_T49FMYQ9FZ*MTcwNDI1ODI4OS4yNzkuMS4xNzA0MjU4MjkwLjAuMC4w*_ga_NEGJ2SXNP7*MTcwNDI1ODI4OS4yNjcuMS4xNzA0MjU4MjkwLjAuMC4w
