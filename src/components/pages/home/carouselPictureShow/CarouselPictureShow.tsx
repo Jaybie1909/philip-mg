@@ -25,7 +25,7 @@ const CarouselPictureShow = () => {
   }, [current]);
 
   return (
-    <div className="w-[80%] m-auto overflow-hidden h-[500px] ">
+    <div className="w-[80%] m-auto overflow-hidden ">
       <div className="relative">
         <div
           className="flex my-2 items-center transition-transform duration-300 ease-in-out"

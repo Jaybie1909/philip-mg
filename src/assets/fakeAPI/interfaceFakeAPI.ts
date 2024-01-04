@@ -14,7 +14,8 @@ interface bikeDataInterface {
   monthlyPayment: string;
   downPayment: string;
   cc: string;
-  avalible: "Avalible" | "Booked" | "Sold";
+  isAvailable: "Available" | "Booked" | "Sold";
+  tags: string[];
 }
 
 interface relatedBikeInterface {
@@ -26,4 +27,21 @@ interface coverCaroselInterface {
   tags: string[];
 }
 
-export type { bikeDataInterface, relatedBikeInterface, coverCaroselInterface };
+interface brandsInterface {
+  url: string;
+  brandName: string;
+}
+
+interface showroomInterface {
+  url: string;
+  showroomName: string;
+  sine: string;
+}
+
+export type {
+  bikeDataInterface,
+  relatedBikeInterface,
+  coverCaroselInterface,
+  brandsInterface,
+  showroomInterface,
+};

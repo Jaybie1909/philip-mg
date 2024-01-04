@@ -3,7 +3,7 @@ import Brands from "@/components/pages/home/brands/Brands";
 import CarouselPictureShow from "@/components/pages/home/carouselPictureShow/CarouselPictureShow";
 import Recommanded from "@/components/pages/home/recommmanded/Recommanded";
 import TellCustomers from "@/components/pages/home/tellCustomers/TellCustomers";
-import Transitions from "@/components/pages/home/transitions/Transitions";
+import Transections from "@/components/pages/home/transitions/Transections";
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
       <TellCustomers />
       <Recommanded />
       <Brands />
-      <Transitions />
+      <Transections />
       <AboutUs />
     </div>
   );
