@@ -7,7 +7,8 @@ const Footer = () => {
       <CarouselBottom />
       <div className="bg-[#000000]  h-[80px] flex justify-between items-center px-[5%]">
         <span className="text-[#e3e3e3] font-medium text-[14px] ml-[10px]">
-          Copyright © @github.com/miller2406 All Right Reserved{" "}
+          Copyright © @github.com/miller2406{" "}
+          <p className="md:inline-block">All Right Reserved </p>
         </span>
         <span className="text-white flex gap-3 text-3xl mr-1">
           <a href="https://www.facebook.com/" target="_blank">
