@@ -6,7 +6,7 @@ const CardComponent = () => {
   const [isOver, setIsOver] = useState(false);
 
   const fwCarousel = () => {
-    if (current === bikeData.length - 10) {
+    if (current === bikeData.length / 2) {
       setCurrent(0);
     } else setCurrent(current + 0.03);
   };

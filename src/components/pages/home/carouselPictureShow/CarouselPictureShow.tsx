@@ -7,7 +7,7 @@ const CarouselPictureShow = () => {
   const [current, setCurrent] = useState(0);
 
   const nextPic = () => {
-    if (current === coverCarosel.length - 1) {
+    if (current === coverCarosel.length / 4 - 1) {
       setCurrent(0);
     } else setCurrent(current + 1);
   };
