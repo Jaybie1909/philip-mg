@@ -2,12 +2,12 @@ import { bikeData } from "@/assets/fakeAPI/FakeAPI";
 
 const ProductCard = () => {
   return (
-    <div>
+    <div className="flex flex-wrap justify-center items-start gap-[15px] p-[15px] my-[20px] transition-all duration-300 ease-in-out">
       {bikeData.map((item, index) => {
         return (
           <div
             key={`product-card-${index}`}
-            className=" min-w-[384px] min-h-[504px] max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2"
+            className="flex-1 min-w-[100%] sm:max-w-[45%] sm:min-w-[45%] lg:max-w-[30%] lg:min-w-[30%] xl:min-w-[384px] xl:min-h-[504px] xl:max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2"
           >
             <a href="">
               <img
@@ -17,7 +17,7 @@ const ProductCard = () => {
               />
             </a>
             <div className="px-2 text-white">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between flex-wrap items-center relative">
                 <div
                   key={`status-${index}`}
                   className="font-bold text-xl"
@@ -41,12 +41,12 @@ const ProductCard = () => {
                 <span className="text-md my-2">Mile : {item.mile}</span>
                 <div className="flex flex-col text-sm">
                   <span>Down Payment : {item.downPayment} THB</span>
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between flex-wrap items-center">
                     <span>
                       Monthly Payment : {item.monthlyPayment} THB/month
                     </span>
                     <button
-                      className={`bg-[#6189B4] dis px-2 py-1 rounded-2xl active:scale-105 hover:scale-110`}
+                      className={`mt-[15px] bg-[#6189B4] dis px-2 py-1 rounded-2xl active:scale-105 hover:scale-110`}
                     >
                       {item.isAvailable === "Available"
                         ? "Book Now"
@@ -61,7 +61,7 @@ const ProductCard = () => {
                 return (
                   <span
                     key={`tag-${tag}-${index}`}
-                    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-[10px] md:text-sm font-semibold text-gray-700 mr-2 mb-2"
                   >
                     <a href="/">#{tag}</a>
                   </span>
