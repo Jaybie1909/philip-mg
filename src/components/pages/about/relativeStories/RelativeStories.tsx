@@ -1,4 +1,3 @@
-import React from "react";
 import { relativePic } from "@/assets/fakeAPI/FakeAPI";
 
 const RelativeStories = () => {

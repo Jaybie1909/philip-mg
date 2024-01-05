@@ -41,6 +41,7 @@ interface showroomInterface {
 interface shopInterface {
   url: string;
   name: string;
+  phone: string;
   alt: string;
 }
 
