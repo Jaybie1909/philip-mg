@@ -1390,6 +1390,7 @@ const frontShop: shopInterface[] = [
     phone: "047-547-9856",
   },
 ];
+
 const maintenanceShop: shopInterface[] = [
   {
     url: "src/assets/images/shop/maintenance/188-Motorcycle-Maintenance-Repair.jpg",

@@ -1,7 +1,15 @@
-import React from "react";
+import CompanyAddress from "./companyAdress/CompanyAddress";
+import ProductDisplay from "./productDisplay/ProductDisplay";
+import { useParams } from "react-router-dom";
 
 const ProductDetail = () => {
-  return <div>ProductDetail</div>;
+  const { indexID } = useParams();
+  return (
+    <div>
+      <ProductDisplay indexID={indexID} />
+      <CompanyAddress />
+    </div>
+  );
 };
 
 export default ProductDetail;

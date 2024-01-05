@@ -17,7 +17,10 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/about-us" element={<About />}></Route>
         <Route path="/products" element={<Products />}></Route>
-        <Route path="/product-detail" element={<ProductDetail />}></Route>
+        <Route
+          path="/product-detail/:indexID"
+          element={<ProductDetail />}
+        ></Route>
         <Route path="/contact-us" element={<ContactUs />}></Route>
       </Routes>
       {/* footer */}
