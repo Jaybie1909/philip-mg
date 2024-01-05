@@ -7,12 +7,12 @@ const ProductCard = () => {
         return (
           <div
             key={`product-card-${index}`}
-            className="flex-1 min-w-[100%] sm:max-w-[45%] sm:min-w-[45%] lg:max-w-[30%] lg:min-w-[30%] xl:min-w-[384px] xl:min-h-[504px] xl:max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2"
+            className=" flex-1 min-w-[100%] sm:max-w-[45%] sm:min-w-[45%] lg:max-w-[30%] lg:min-w-[30%] xl:min-w-[384px]  xl:max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2 sm:min-h-[500px] "
           >
             <a href={`/product-detail/${index}`}>
               <img
                 className="w-full pb-2 rounded-3xl"
-                src={item.url1}
+                src={item.pictures[0]}
                 alt={item.tags[0]}
               />
             </a>

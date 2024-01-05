@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { relatedBike } from "@/assets/fakeAPI/FakeAPI";
+import { bikeData } from "@/assets/fakeAPI/FakeAPI";
 
 const CarouselBottom = () => {
   const [current, setCurrent] = useState(0);
   const preSlide = () =>
     current! >= 1
       ? setCurrent(current - 1)
-      : setCurrent(Math.round(relatedBike.length / 7) - 1);
+      : setCurrent(Math.round(bikeData.length / 10) - 1);
   const nextSlide = () =>
-    current! <= Math.round(relatedBike.length / 7) - 1
+    current! <= Math.round(bikeData.length / 10) - 1
       ? setCurrent(current + 1)
       : setCurrent(0);
 
@@ -19,15 +19,15 @@ const CarouselBottom = () => {
           className="h-[150px] lg:h-[284.19px] md:h-[200px] flex gap-5 items-center z-50 transition delay-150 duration-300 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {relatedBike.map((item, index) => (
+          {bikeData.map((item, index) => (
             <a
-              href="#"
+              href={`/product-detail/${index}`}
               className="lg:min-w-[300px] md:min-w-[200px] min-w-[150px] flex justify-center items-center"
               key={index}
             >
               <img
-                src={item.url}
-                alt=""
+                src={item.pictures[0]}
+                alt="item"
                 className="max-h-[220px] overflow-hidden"
               />
             </a>

@@ -48,10 +48,10 @@ const Recommanded = () => {
                 key={`product-card-${index}`}
                 className=" min-w-[384px] min-h-[504px] max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2"
               >
-                <a href="">
+                <a href={`/product-detail/${index}`}>
                   <img
                     className="w-full pb-2 rounded-3xl"
-                    src={item.url1}
+                    src={item.pictures[0]}
                     alt={item.tags[0]}
                   />
                 </a>

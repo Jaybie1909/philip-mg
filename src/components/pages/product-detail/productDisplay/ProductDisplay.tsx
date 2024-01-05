@@ -1,4 +1,5 @@
 import { bikeData } from "@/assets/fakeAPI/FakeAPI";
+import CarouselDetail from "./Carousel.detail";
 const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
   const num: number = +indexID;
   return (
@@ -7,13 +8,7 @@ const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
         key={`product-card-${num}`}
         className="flex-1 min-w-[100%]  rounded-2xl shadow-lg bg-[#709fd2] p-2"
       >
-        <a href="">
-          <img
-            className="w-full pb-2 rounded-3xl"
-            src={bikeData[num].url1}
-            alt={bikeData[num].tags[0]}
-          />
-        </a>
+        <CarouselDetail num={num} />
         <div className="px-2 text-white">
           <div className="flex justify-between flex-wrap items-center relative">
             <div
