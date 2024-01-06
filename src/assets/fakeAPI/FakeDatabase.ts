@@ -1,123 +1,11 @@
 import {
   bikeDataInterface,
-  relatedBikeInterface,
   coverCaroselInterface,
   brandsInterface,
   showroomInterface,
   shopInterface,
   relativePicInterface,
 } from "./interfaceFakeAPI";
-
-const relatedBike: relatedBikeInterface[] = [
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-  {
-    url: "/src/assets/images/products/Triump.webp",
-  },
-  {
-    url: "/src/assets/images/products/Africa_Twin.jpg",
-  },
-  {
-    url: "/src/assets/images/products/BMW_GS_1250.jpg",
-  },
-];
 
 const bikeData: bikeDataInterface[] = [
   {
@@ -1158,7 +1046,6 @@ const relativePic: relativePicInterface[] = [
 ];
 
 export {
-  relatedBike,
   bikeData,
   coverCarosel,
   brands,

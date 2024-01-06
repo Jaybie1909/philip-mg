@@ -1,25 +1,27 @@
-import { bikeData } from "@/assets/fakeAPI/FakeAPI";
-import React, { useEffect, useState } from "react";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
+import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { useEffect, useState } from "react";
 import { GoDot } from "react-icons/go";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 const CarouselDetail = ({ num }: { num: number }) => {
+  const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
   const [current, setCurrent] = useState(0);
 
   const arr = [];
   useEffect(() => {
-    for (let i = 0; i < bikeData[num].pictures.length; i++) {
-      arr.push(bikeData[num].pictures[i]);
+    for (let i = 0; i < data[num].pictures.length; i++) {
+      arr.push(data[num].pictures[i]);
     }
   }, []);
   const nextPic = () => {
-    if (current === bikeData[num].pictures.length - 1) {
+    if (current === data[num].pictures.length - 1) {
       setCurrent(0);
     } else setCurrent(current + 1);
   };
   const prePic = () => {
     if (current === 0) {
-      setCurrent(bikeData[num].pictures.length - 1);
+      setCurrent(data[num].pictures.length - 1);
     } else setCurrent(current - 1);
   };
 
@@ -38,7 +40,7 @@ const CarouselDetail = ({ num }: { num: number }) => {
             className="flex my-2 items-center transition-all duration-300 ease-in-out"
             style={{ transform: `translateX(-${current * 100}%)` }}
           >
-            {bikeData[num].pictures.map((item, index) => {
+            {data[num].pictures.map((item, index) => {
               return (
                 <div
                   key={`cover-link-key-${index}`}
@@ -56,7 +58,7 @@ const CarouselDetail = ({ num }: { num: number }) => {
           </div>
           <div className="absolute flex w-[100%] justify-center bottom-3">
             <div className="bg-gray-500 bg-opacity-50 flex rounded-xl px-1">
-              {bikeData[num].pictures.map((item, index) => {
+              {data[num].pictures.map((item, index) => {
                 return (
                   <button
                     onClick={() => setCurrent(index)}

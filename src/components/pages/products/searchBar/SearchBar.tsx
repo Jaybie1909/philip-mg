@@ -3,7 +3,7 @@ import "@/index.css";
 
 const SearchBar = () => {
   return (
-    <div className="bg-[url('src/assets/images/shop/relative/groupTravel.webp')] ">
+    <div className="bg-[url('src/assets/images/shop/relative/groupTravel.webp')] bg-no-repeat bg-cover ">
       <form className="h-[200px] flex justify-evenly items-center px-[5%]">
         <select className="bg-blue-600 w-[150px] font-semibold capitalize border group border-blue-800 text-white text-sm rounded-2xl block  p-2.5  ">
           {brandList.map((item, index) => (

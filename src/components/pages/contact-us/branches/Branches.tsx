@@ -1,8 +1,9 @@
-import React from "react";
-import { frontShop } from "@/assets/fakeAPI/FakeAPI";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
+import { shopInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 import { FaPhone } from "react-icons/fa";
 
 const Branches = () => {
+  const data: shopInterface[] = FakeAPIRespond.data.frontShop;
   return (
     <div className="lg:h-[600px]">
       <div>
@@ -11,7 +12,7 @@ const Branches = () => {
         </h2>
       </div>
       <div className="block lg:flex justify-evenly items-center px-[2%]">
-        {frontShop.map((item) => {
+        {data.map((item) => {
           return (
             <div
               key={item.phone}

@@ -1,9 +1,11 @@
-import { relativePic } from "@/assets/fakeAPI/FakeAPI";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
+import { relativePicInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 
 const RelativeStories = () => {
+  const data: relativePicInterface[] = FakeAPIRespond.data.relativePic;
   return (
     <div className="mb-[30px]">
-      {relativePic.map((item, index) => {
+      {data.map((item, index) => {
         return (
           <div
             key={`relative-key-${index}`}

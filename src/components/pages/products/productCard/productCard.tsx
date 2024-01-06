@@ -1,9 +1,11 @@
-import { bikeData } from "@/assets/fakeAPI/FakeAPI";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
+import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 
 const ProductCard = () => {
+  const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
   return (
     <div className="flex flex-wrap justify-center items-start gap-[15px] p-[15px] my-[20px] transition-all duration-300 ease-in-out">
-      {bikeData.map((item, index) => {
+      {data.map((item, index) => {
         return (
           <div
             key={`product-card-${index}`}

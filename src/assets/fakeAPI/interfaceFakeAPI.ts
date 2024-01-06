@@ -45,6 +45,21 @@ interface relativePicInterface {
   name: string;
 }
 
+interface data {
+  bikeData: bikeDataInterface[];
+  coverCarosel: coverCaroselInterface[];
+  brands: brandsInterface[];
+  showroom: showroomInterface[];
+  frontShop: shopInterface[];
+  maintenanceShop: shopInterface[];
+  relativePic: relativePicInterface[];
+}
+
+interface FakeAPIRespondInterface {
+  data: data;
+  status: number;
+}
+
 export type {
   bikeDataInterface,
   relatedBikeInterface,
@@ -53,4 +68,6 @@ export type {
   showroomInterface,
   shopInterface,
   relativePicInterface,
+  data,
+  FakeAPIRespondInterface,
 };

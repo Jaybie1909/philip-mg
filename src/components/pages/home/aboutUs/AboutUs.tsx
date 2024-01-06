@@ -1,13 +1,15 @@
-import { showroom } from "@/assets/fakeAPI/FakeAPI";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
+import { showroomInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 
 const AboutUs = () => {
+  const data: showroomInterface[] = FakeAPIRespond.data.showroom;
   return (
     <div className="lg:h-[421.65px] py-10 px-[5%] lg:px-0 lg:py-0 bg-red-200">
       <div className="flex flex-col lg:flex-row items-center justify-center h-[100%]">
         <div className="flex-1 flex justify-center items-center 2xl:flex-none 2xl:ml-[10%]">
           <img
-            src={showroom[0].url}
-            alt={showroom[0].showroomName}
+            src={data[0].url}
+            alt={data[0].showroomName}
             className="max-w-[90%] max-h-[400px]"
           />
         </div>

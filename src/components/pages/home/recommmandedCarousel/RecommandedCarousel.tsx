@@ -1,12 +1,14 @@
-import { bikeData } from "@/assets/fakeAPI/FakeAPI";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
+import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 import { useEffect, useState } from "react";
 
-const Recommanded = () => {
+const RecommandedCarousel = () => {
+  const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
   const [current, setCurrent] = useState(0);
   const [isOver, setIsOver] = useState(false);
 
   const fwCarousel = () => {
-    if (current >= bikeData.length / 10) {
+    if (current >= data.length / 10) {
       setCurrent(0);
     } else setCurrent(current + 0.03);
   };
@@ -35,16 +37,18 @@ const Recommanded = () => {
       <h2 className="md:text-5xl text-3xl font-bold text-center my-5 ">
         Recommanded Bigbike
       </h2>
-      <div className="overflow-hidden">
+      <div
+        onMouseOver={moseOver}
+        onMouseLeave={mouseLeave}
+        className="overflow-hidden"
+      >
         <div
           className="flex gap-2 transition-all duration-1000 ease-linear"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {bikeData.map((item, index) => {
+          {data.map((item, index) => {
             return (
               <div
-                onMouseOver={moseOver}
-                onMouseLeave={mouseLeave}
                 key={`product-card-${index}`}
                 className=" min-w-[384px] min-h-[504px] max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2"
               >
@@ -123,4 +127,4 @@ const Recommanded = () => {
   );
 };
 
-export default Recommanded;
+export default RecommandedCarousel;

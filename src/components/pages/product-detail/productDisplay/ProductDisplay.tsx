@@ -1,6 +1,9 @@
-import { bikeData } from "@/assets/fakeAPI/FakeAPI";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import CarouselDetail from "./Carousel.detail";
+import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+
 const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
+  const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
   const num: number = +indexID;
   return (
     <div className="flex flex-wrap justify-center items-start gap-[15px] p-[15px] px-[5%] my-[20px] transition-all duration-300 ease-in-out">
@@ -14,34 +17,34 @@ const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
             <div
               key={`status-${num}`}
               className="font-bold text-xl"
-            >{`${bikeData[num].brand} ${bikeData[num].version} Y.${bikeData[num].year}`}</div>
+            >{`${data[num].brand} ${data[num].version} Y.${data[num].year}`}</div>
             <div
               className={`font-semibold ${
-                bikeData[num].isAvailable === "Available"
+                data[num].isAvailable === "Available"
                   ? "text-white"
-                  : bikeData[num].isAvailable === "Booked"
+                  : data[num].isAvailable === "Booked"
                   ? "text-yellow-300"
                   : "text-red-600"
               }`}
             >
-              {bikeData[num].isAvailable}
+              {data[num].isAvailable}
             </div>
           </div>
           <div className="text-base flex flex-col">
             <span className="text-xl font-semibold">
-              Price : {bikeData[num].price} THB
+              Price : {data[num].price} THB
             </span>
-            <span className="text-md my-2">Mile : {bikeData[num].mile}</span>
+            <span className="text-md my-2">Mile : {data[num].mile}</span>
             <div className="flex flex-col text-sm">
-              <span>Down Payment : {bikeData[num].downPayment} THB</span>
+              <span>Down Payment : {data[num].downPayment} THB</span>
               <div className="flex justify-between flex-wrap items-center">
                 <span>
-                  Monthly Payment : {bikeData[num].monthlyPayment} THB/month
+                  Monthly Payment : {data[num].monthlyPayment} THB/month
                 </span>
                 <button
                   className={`mt-[15px] bg-[#6189B4] dis px-2 py-1 rounded-2xl active:scale-105 hover:scale-110`}
                 >
-                  {bikeData[num].isAvailable === "Available"
+                  {data[num].isAvailable === "Available"
                     ? "Book Now"
                     : "More Detail"}
                 </button>
@@ -50,7 +53,7 @@ const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
           </div>
         </div>
         <div className="px-3 pt-4 pb-2">
-          {bikeData[num].tags.map((tag, index) => {
+          {data[num].tags.map((tag, index) => {
             return (
               <span
                 key={`tag-${tag}-${index}`}

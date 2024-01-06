@@ -1,4 +1,6 @@
-import { frontShop } from "@/assets/fakeAPI/FakeAPI";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
+import { shopInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+
 import {
   FaFacebook,
   FaLine,
@@ -8,6 +10,7 @@ import {
 } from "react-icons/fa";
 
 const CompanyAddress = () => {
+  const data: shopInterface[] = FakeAPIRespond.data.frontShop;
   return (
     <div className=" px-[5%] md:h-[220px] md:flex md:flex-row flex-col justify-between ">
       <div className="md:w-[50%] md:h-[240px] ">
@@ -49,7 +52,7 @@ const CompanyAddress = () => {
               <div className="rotate-[180deg] mx-1 mb-2">
                 <FaPhone />
               </div>
-              <span className="">{frontShop[0].phone}</span>
+              <span className="">{data[0].phone}</span>
             </a>
           </div>
           <div className="w-[90%] h-[60px] bg-stone-800 rounded-2xl flex hover:scale-110 transition-all delay-150 duration-300 ease-in-out">

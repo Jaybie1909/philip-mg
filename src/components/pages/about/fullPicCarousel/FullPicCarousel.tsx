@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
-import { maintenanceShop } from "@/assets/fakeAPI/FakeAPI";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { GoDot } from "react-icons/go";
+import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
+import { shopInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 
 const FullPicCarousel = () => {
+  const data: shopInterface[] = FakeAPIRespond.data.maintenanceShop;
   const [current, setCurrent] = useState(0);
 
   const nextPic = () => {
-    if (current === maintenanceShop.length - 1) {
+    if (current === data.length - 1) {
       setCurrent(0);
     } else setCurrent(current + 1);
   };
   const prePic = () => {
     if (current === 0) {
-      setCurrent(maintenanceShop.length - 1);
+      setCurrent(data.length - 1);
     } else setCurrent(current - 1);
   };
 
@@ -31,7 +33,7 @@ const FullPicCarousel = () => {
           className="flex my-2 items-center transition-transform duration-300 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {maintenanceShop.map((item, index) => {
+          {data.map((item, index) => {
             return (
               <a
                 href="/"
@@ -65,7 +67,7 @@ const FullPicCarousel = () => {
         </div>
         <div className="absolute flex w-[100%] justify-center bottom-3">
           <div className="bg-gray-500 bg-opacity-50 flex rounded-xl px-1">
-            {maintenanceShop.map((item, index) => {
+            {data.map((item, index) => {
               return (
                 <button
                   onClick={() => setCurrent(index)}
