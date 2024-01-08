@@ -966,7 +966,7 @@ const brands: brandsInterface[] = [
     brandName: "Yamaha",
   },
   {
-    url: "src/assets/images/brands/ktm.webp",
+    url: "src/assets/images/brands/ktm.png",
     brandName: "KTM",
   },
 ];
