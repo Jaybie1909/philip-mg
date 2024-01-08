@@ -8,6 +8,7 @@ import {
   FaTiktok,
   FaYoutube,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CompanyAddress = () => {
   const data: shopInterface[] = FakeAPIRespond.data.frontShop;
@@ -26,18 +27,18 @@ const CompanyAddress = () => {
             <span className="pt-[15px] text-base">Tel. : 088-888-8888</span>
             <span className="text-base">Email : kaideemakemake@mail.com</span>
             <span className="text-black flex gap-3 text-3xl pt-[20px]">
-              <a href="https://www.facebook.com/" target="_blank">
+              <Link to="https://www.facebook.com/" target="_blank">
                 <FaFacebook />
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
+              </Link>
+              <Link to="https://www.youtube.com/" target="_blank">
                 <FaYoutube />
-              </a>
-              <a href="https://www.tiktok.com/" target="_blank">
+              </Link>
+              <Link to="https://www.tiktok.com/" target="_blank">
                 <FaTiktok />
-              </a>
-              <a href="https://line.me/en/" target="_blank">
+              </Link>
+              <Link to="https://line.me/en/" target="_blank">
                 <FaLine />
-              </a>
+              </Link>
             </span>
           </div>
         </div>
@@ -45,15 +46,15 @@ const CompanyAddress = () => {
       <div className="md:h-full md:w-[50%] md:mt-0 mt-[30px]  flex justify-center items-start pb-[35px] ">
         <div className="bg-gray-300 w-[90%] h-[100%] rounded-3xl md:py-0 py-4 flex justify-center  items-center flex-col">
           <div className="w-[60%] h-[50px] bg-blue-600 rounded-3xl flex mb-[20px] transition-all delay-100 duration-100 ease-in-out hover:bg-red-600 active:scale-90 focus:scale-100 hover:scale-105">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="flex font-semibold text-2xl text-white justify-center items-center w-full h-full "
             >
               <div className="rotate-[180deg] mx-1 mb-2">
                 <FaPhone />
               </div>
               <span className="">{data[0].phone}</span>
-            </a>
+            </Link>
           </div>
           <div className="w-[90%] h-[60px] bg-stone-800 rounded-2xl flex hover:scale-110 transition-all delay-150 duration-300 ease-in-out">
             <div className="flex font-semibold text-xl  text-white justify-center items-center w-full h-full">

@@ -34,7 +34,7 @@ const CarouselDetail = ({ num }: { num: number }) => {
   return (
     <div>
       {" "}
-      <div className="w-[100%] m-auto overflow-hidden ">
+      <div className="w-[100%] m-auto overflow-hidden rounded-2xl">
         <div className="relative">
           <div
             className="flex my-2 items-center transition-all duration-300 ease-in-out"

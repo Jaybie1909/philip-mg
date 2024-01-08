@@ -1,5 +1,6 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { brandsInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { Link } from "react-router-dom";
 
 const Brands = () => {
   const data: brandsInterface[] = FakeAPIRespond.data.brands;
@@ -10,13 +11,13 @@ const Brands = () => {
           return (
             <div key={`${item.brandName}-brand`} className="m-auto">
               <span className="">
-                <a href="/">
+                <Link to="/">
                   <img
                     src={item.url}
                     alt={`${item.brandName}`}
                     className="h-[100px]"
                   />
-                </a>
+                </Link>
               </span>
             </div>
           );

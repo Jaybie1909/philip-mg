@@ -1,6 +1,7 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import CarouselDetail from "./Carousel.detail";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { Link } from "react-router-dom";
 
 const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
   const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
@@ -9,15 +10,14 @@ const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
     <div className="flex flex-wrap justify-center items-start gap-[15px] p-[15px] px-[5%] my-[20px] transition-all duration-300 ease-in-out">
       <div
         key={`product-card-${num}`}
-        className="flex-1 min-w-[100%]  rounded-2xl shadow-lg bg-[#709fd2] p-2"
+        className="flex-1 min-w-[100%] rounded-2xl shadow-lg bg-[#709fd2] p-2"
       >
         <CarouselDetail num={num} />
         <div className="px-2 text-white">
-          <div className="flex justify-between flex-wrap items-center relative">
-            <div
-              key={`status-${num}`}
-              className="font-bold text-xl"
-            >{`${data[num].brand} ${data[num].version} Y.${data[num].year}`}</div>
+          <div className="flex justify-between flex-wrap items-center relative pt-[1%]">
+            <div key={`status-${num}`} className="font-bold text-xl">
+              {`${data[num].brand} ${data[num].version} Y.${data[num].year}`}
+            </div>
             <div
               className={`font-semibold ${
                 data[num].isAvailable === "Available"
@@ -59,7 +59,7 @@ const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
                 key={`tag-${tag}-${index}`}
                 className="inline-block bg-gray-200 rounded-full px-3 py-1 text-[10px] md:text-sm font-semibold text-gray-700 mr-2 mb-2"
               >
-                <a href="/">#{tag}</a>
+                <Link to="/">#{tag}</Link>
               </span>
             );
           })}

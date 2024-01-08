@@ -3,6 +3,7 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { GoDot } from "react-icons/go";
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { coverCaroselInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { Link } from "react-router-dom";
 
 const CarouselPictureShow = () => {
   const data: coverCaroselInterface[] = FakeAPIRespond.data.coverCarosel;
@@ -35,8 +36,8 @@ const CarouselPictureShow = () => {
         >
           {data.map((item, index) => {
             return (
-              <a
-                href="/"
+              <Link
+                to="/"
                 key={`cover-link-key-${index}`}
                 className="min-w-[100%] "
               >
@@ -46,7 +47,7 @@ const CarouselPictureShow = () => {
                   key={`cover-key-${index}`}
                   className="min-w-[100%] "
                 />
-              </a>
+              </Link>
             );
           })}
         </div>

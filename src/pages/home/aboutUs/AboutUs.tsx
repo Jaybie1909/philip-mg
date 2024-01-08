@@ -1,5 +1,6 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { showroomInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   const data: showroomInterface[] = FakeAPIRespond.data.showroom;
@@ -24,11 +25,11 @@ const AboutUs = () => {
             soluta.
           </p>
           <div>
-            <a href="/about-us">
+            <Link to="/about-us">
               <button className="text-xl scale-95 hover:scale-105 active:scale-100 transition-all ease-linear duration-200">
                 Learn More{" <<<"}
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

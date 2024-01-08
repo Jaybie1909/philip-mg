@@ -1,6 +1,7 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const RecommandedCarousel = () => {
   const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
@@ -52,13 +53,13 @@ const RecommandedCarousel = () => {
                 key={`product-card-${index}`}
                 className=" min-w-[384px] min-h-[504px] max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2"
               >
-                <a href={`/product-detail/${index}`}>
+                <Link to={`/product-detail/${index}`}>
                   <img
                     className="w-full pb-2 rounded-3xl"
                     src={item.pictures[0]}
                     alt={item.tags[0]}
                   />
-                </a>
+                </Link>
                 <div className="px-2 text-white">
                   <div className="flex justify-between items-center">
                     <div
@@ -106,7 +107,7 @@ const RecommandedCarousel = () => {
                         key={`tag-${tag}-${index}`}
                         className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                       >
-                        <a href="/">#{tag}</a>
+                        <Link to="/">#{tag}</Link>
                       </span>
                     );
                   })}
@@ -118,9 +119,9 @@ const RecommandedCarousel = () => {
       </div>
       <div className="flex items-center justify-center">
         <button className="text-xl my-3 font-bold bg-[#B3CDE0] px-5 py-1 rounded-3xl">
-          <a href="/product-detail">
+          <Link to="/product-detail">
             {">>"}More Bike{"<<"}
-          </a>
+          </Link>
         </button>
       </div>
     </div>

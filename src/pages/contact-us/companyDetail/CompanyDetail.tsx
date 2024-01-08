@@ -1,4 +1,5 @@
 import { FaFacebook, FaLine, FaTiktok, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CompanyDetail = () => {
   return (
@@ -16,18 +17,18 @@ const CompanyDetail = () => {
             <span className="pt-[15px] text-xl">Tel. : 088-888-8888</span>
             <span className="text-xl">Email : kaideemakemake@mail.com</span>
             <span className="text-black flex gap-3 text-3xl pt-[20px]">
-              <a href="https://www.facebook.com/" target="_blank">
+              <Link to="https://www.facebook.com/" target="_blank">
                 <FaFacebook />
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
+              </Link>
+              <Link to="https://www.youtube.com/" target="_blank">
                 <FaYoutube />
-              </a>
-              <a href="https://www.tiktok.com/" target="_blank">
+              </Link>
+              <Link to="https://www.tiktok.com/" target="_blank">
                 <FaTiktok />
-              </a>
-              <a href="https://line.me/en/" target="_blank">
+              </Link>
+              <Link to="https://line.me/en/" target="_blank">
                 <FaLine />
-              </a>
+              </Link>
             </span>
           </div>
         </div>

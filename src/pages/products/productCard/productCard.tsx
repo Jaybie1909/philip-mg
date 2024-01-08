@@ -1,5 +1,6 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { Link } from "react-router-dom";
 
 const ProductCard = () => {
   const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
@@ -11,13 +12,13 @@ const ProductCard = () => {
             key={`product-card-${index}`}
             className=" flex-1 min-w-[100%] sm:max-w-[45%] sm:min-w-[45%] lg:max-w-[30%] lg:min-w-[30%] xl:min-w-[384px]  xl:max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2 sm:min-h-[500px] "
           >
-            <a href={`/product-detail/${index}`}>
+            <Link to={`/product-detail/${index}`}>
               <img
                 className="w-full pb-2 rounded-3xl"
                 src={item.pictures[0]}
                 alt={item.tags[0]}
               />
-            </a>
+            </Link>
             <div className="px-2 text-white">
               <div className="flex justify-between flex-wrap items-center relative">
                 <div
@@ -65,7 +66,7 @@ const ProductCard = () => {
                     key={`tag-${tag}-${index}`}
                     className="inline-block bg-gray-200 rounded-full px-3 py-1 text-[10px] md:text-sm font-semibold text-gray-700 mr-2 mb-2"
                   >
-                    <a href="/">#{tag}</a>
+                    <Link to="/">#{tag}</Link>
                   </span>
                 );
               })}

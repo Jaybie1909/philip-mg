@@ -21,12 +21,12 @@ function Header() {
         <div className=" bg-[#1C5696]">
           <div className="flex items-center justify-between max-w-[1536px] mx-auto lg:h-[100px] h-[60px] py-[20px] px-[5%]">
             <div className="sm:w-[185px] flex items-center justify-center">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="cursor-pointer text-white xl:text-[4em] lg:text-[3em] text-[2em] font-bold pb-2 "
               >
                 LOGO
-              </a>
+              </Link>
             </div>
             <nav className="hidden sm:flex items-center">
               {navList.map(([title, url], index) => (
