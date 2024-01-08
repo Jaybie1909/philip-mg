@@ -3,6 +3,7 @@ import { FaSearch, FaXing } from "react-icons/fa";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { scrollToTheTopOfThePage } from "../ScrollToTheTopOfThePage.hook";
 
 function Header() {
   const navList = [
@@ -22,6 +23,7 @@ function Header() {
           <div className="flex items-center justify-between max-w-[1536px] mx-auto lg:h-[100px] h-[60px] py-[20px] px-[5%]">
             <div className="sm:w-[185px] flex items-center justify-center">
               <Link
+                onClick={scrollToTheTopOfThePage}
                 to="/"
                 className="cursor-pointer text-white xl:text-[4em] lg:text-[3em] text-[2em] font-bold pb-2 "
               >
@@ -31,6 +33,7 @@ function Header() {
             <nav className="hidden sm:flex items-center">
               {navList.map(([title, url], index) => (
                 <Link
+                  onClick={scrollToTheTopOfThePage}
                   key={index}
                   to={url}
                   className="xl:w-[132.54px] lg:w-[110px] w-[80px] text-center font-semibold text-slate-800 xl:text-[18px] lg:text-[16px] text-[10px] xl:mx-2 mx-1 bg-[#B3CDE0] rounded-[20pt] px-3 py-1 transition-all delay-100 duration-150 ease-in-out hover:scale-110 active:scale-115"

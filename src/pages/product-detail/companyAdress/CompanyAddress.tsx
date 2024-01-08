@@ -1,13 +1,9 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { shopInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import CompanyCard from "@/components/CompanyCard.component";
+import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
 
-import {
-  FaFacebook,
-  FaLine,
-  FaPhone,
-  FaTiktok,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const CompanyAddress = () => {
@@ -17,29 +13,7 @@ const CompanyAddress = () => {
       <div className="md:w-[50%] md:h-[240px] ">
         <div className="md:relative">
           <div className="md:absolute static z-20 bg-gray-300 rounded-2xl font-semibold text-2xl flex flex-col pl-[8%] pr-[5%] py-5 shadow-2xl">
-            <h2 className="text-[35px] font-bold">Company Name</h2>
-            <span className="pt-[15px] font-bold ">Business Address</span>
-            <span className="pl-[10px] text-base">
-              &#160;&#160;&#160;&#160; Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. A blanditiis voluptatibus modi nihil animi.
-              Esse, eaque fugit ipsam
-            </span>
-            <span className="pt-[15px] text-base">Tel. : 088-888-8888</span>
-            <span className="text-base">Email : kaideemakemake@mail.com</span>
-            <span className="text-black flex gap-3 text-3xl pt-[20px]">
-              <Link to="https://www.facebook.com/" target="_blank">
-                <FaFacebook />
-              </Link>
-              <Link to="https://www.youtube.com/" target="_blank">
-                <FaYoutube />
-              </Link>
-              <Link to="https://www.tiktok.com/" target="_blank">
-                <FaTiktok />
-              </Link>
-              <Link to="https://line.me/en/" target="_blank">
-                <FaLine />
-              </Link>
-            </span>
+            <CompanyCard />
           </div>
         </div>
       </div>

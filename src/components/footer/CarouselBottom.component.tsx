@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 import { Link } from "react-router-dom";
+import { scrollToTheTopOfThePage } from "../ScrollToTheTopOfThePage.hook";
 
 const CarouselBottom = () => {
   const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
@@ -25,6 +26,7 @@ const CarouselBottom = () => {
           {data.map((item, index) => (
             <Link
               to={`/product-detail/${index}`}
+              onClick={scrollToTheTopOfThePage}
               className="lg:min-w-[300px] md:min-w-[200px] min-w-[150px] flex justify-center items-center"
               key={index}
             >

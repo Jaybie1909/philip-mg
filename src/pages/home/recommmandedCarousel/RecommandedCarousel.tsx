@@ -1,5 +1,6 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -53,7 +54,10 @@ const RecommandedCarousel = () => {
                 key={`product-card-${index}`}
                 className=" min-w-[384px] min-h-[504px] max-w-sm rounded-2xl shadow-lg bg-[#709fd2] p-2"
               >
-                <Link to={`/product-detail/${index}`}>
+                <Link
+                  to={`/product-detail/${index}`}
+                  onClick={scrollToTheTopOfThePage}
+                >
                   <img
                     className="w-full pb-2 rounded-3xl"
                     src={item.pictures[0]}
@@ -107,7 +111,7 @@ const RecommandedCarousel = () => {
                         key={`tag-${tag}-${index}`}
                         className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                       >
-                        <Link to="/">#{tag}</Link>
+                        <Link to={`#`}>#{tag}</Link>
                       </span>
                     );
                   })}
@@ -119,7 +123,7 @@ const RecommandedCarousel = () => {
       </div>
       <div className="flex items-center justify-center">
         <button className="text-xl my-3 font-bold bg-[#B3CDE0] px-5 py-1 rounded-3xl">
-          <Link to="/product-detail">
+          <Link to="/product-detail" onClick={scrollToTheTopOfThePage}>
             {">>"}More Bike{"<<"}
           </Link>
         </button>

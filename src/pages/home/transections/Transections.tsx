@@ -1,3 +1,4 @@
+import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
 import { Link } from "react-router-dom";
 
 const Transections = () => {
@@ -8,6 +9,7 @@ const Transections = () => {
       <div className="grid grid-cols-2 md:flex justify-evenly items-center h-[100%] ">
         {transList.map((item, index) => (
           <Link
+            onClick={scrollToTheTopOfThePage}
             to="/contact-us"
             className="m-auto"
             key={`transection-${index}`}

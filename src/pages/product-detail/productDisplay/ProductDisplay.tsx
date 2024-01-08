@@ -2,6 +2,7 @@ import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import CarouselDetail from "./Carousel.detail";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 import { Link } from "react-router-dom";
+import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
 
 const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
   const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
@@ -59,7 +60,9 @@ const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
                 key={`tag-${tag}-${index}`}
                 className="inline-block bg-gray-200 rounded-full px-3 py-1 text-[10px] md:text-sm font-semibold text-gray-700 mr-2 mb-2"
               >
-                <Link to="/">#{tag}</Link>
+                <Link to="#" onClick={scrollToTheTopOfThePage}>
+                  #{tag}
+                </Link>
               </span>
             );
           })}

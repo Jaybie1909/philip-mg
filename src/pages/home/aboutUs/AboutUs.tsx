@@ -1,5 +1,6 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { showroomInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
 import { Link } from "react-router-dom";
 
 const AboutUs = () => {
@@ -25,7 +26,7 @@ const AboutUs = () => {
             soluta.
           </p>
           <div>
-            <Link to="/about-us">
+            <Link to="/about-us" onClick={scrollToTheTopOfThePage}>
               <button className="text-xl scale-95 hover:scale-105 active:scale-100 transition-all ease-linear duration-200">
                 Learn More{" <<<"}
               </button>
