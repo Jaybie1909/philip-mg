@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { Link } from "react-router-dom";
 
 const CarouselBottom = () => {
   const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
@@ -22,8 +23,8 @@ const CarouselBottom = () => {
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {data.map((item, index) => (
-            <a
-              href={`/product-detail/${index}`}
+            <Link
+              to={`/product-detail/${index}`}
               className="lg:min-w-[300px] md:min-w-[200px] min-w-[150px] flex justify-center items-center"
               key={index}
             >
@@ -32,7 +33,7 @@ const CarouselBottom = () => {
                 alt="item"
                 className="max-h-[220px] overflow-hidden"
               />
-            </a>
+            </Link>
           ))}
         </div>
         <div
