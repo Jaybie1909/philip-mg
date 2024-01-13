@@ -1,5 +1,5 @@
 import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
-import CarouselDetail from "./Carousel.detail";
+import CarouselDetail from "./CarouselDetail";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 import { Link } from "react-router-dom";
 import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
