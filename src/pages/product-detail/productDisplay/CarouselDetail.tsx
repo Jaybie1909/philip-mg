@@ -40,15 +40,14 @@ const CarouselDetail = ({ num }: { num: number }) => {
             className="flex my-2 items-center transition-all duration-300 ease-in-out"
             style={{ transform: `translateX(-${current * 100}%)` }}
           >
-            {data[num].pictures.map((item, index) => {
+            {data[num].pictures.map((_, index) => {
               return (
                 <div
                   key={`cover-link-key-${index}`}
                   className="min-w-full lg:max-h-[90vh] md:max-h-[70vh] sm:max-h-[60vh] max-h-[50vh] flex items-center justify-center"
                 >
                   <img
-                    src={item}
-                    alt={item}
+                    src={data[num].pictures[index]}
                     key={`cover-key-${index}`}
                     className="min-w-full"
                   />
@@ -58,7 +57,7 @@ const CarouselDetail = ({ num }: { num: number }) => {
           </div>
           <div className="absolute flex w-[100%] justify-center bottom-3">
             <div className="bg-gray-500 bg-opacity-50 flex rounded-xl px-1">
-              {data[num].pictures.map((item, index) => {
+              {data[num].pictures.map((_, index) => {
                 return (
                   <button
                     onClick={() => setCurrent(index)}

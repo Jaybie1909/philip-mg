@@ -37,7 +37,7 @@ const RecommandedCarousel = () => {
   return (
     <div>
       <h2 className="md:text-5xl text-3xl font-bold text-center my-5 ">
-        Recommanded Bigbike
+        Recommended Motor
       </h2>
       <div
         onMouseOver={moseOver}
@@ -84,14 +84,14 @@ const RecommandedCarousel = () => {
                   </div>
                   <div className="text-base flex flex-col">
                     <span className="text-xl font-semibold">
-                      Price : {item.price} THB
+                      Price : {item.price} PHP
                     </span>
                     <span className="text-md my-2">Mile : {item.mile}</span>
                     <div className="flex flex-col text-sm">
-                      <span>Down Payment : {item.downPayment} THB</span>
+                      <span>Down Payment : {item.downPayment} PHP</span>
                       <div className="flex justify-between items-center">
                         <span>
-                          Monthly Payment : {item.monthlyPayment} THB/month
+                          Monthly Payment : {item.monthlyPayment} PHP/month
                         </span>
                         <button
                           className={`bg-[#6189B4] dis px-2 py-1 rounded-2xl active:scale-105 hover:scale-110`}

@@ -56,15 +56,10 @@ const FullPicCarousel = () => {
         <div className="absolute top-0 text-center ">
           <div className="bg-slate-100 bg-opacity-60">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold pt-3 px-[4%] transition-all duration-300 ease-in-out">
-              We are professional on bigbike field.
+              Beyond just buying and selling
             </h1>
             <p className="text-sm sm:text-base lg:text-lg font-semibold py-5 px-[5%] text-start transition-all duration-300 ease-in-out">
-              &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Laudantium, labore
-              ipsam, nulla voluptas porro, quis est et numquam in consequuntur
-              veritatis consectetur eligendi. Nisi deleniti officiis eum rem
-              atque. Deserunt, a hic ex adipisci quam vero molestiae totam illum
-              veritatis.
+              &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;we aim to build a community of riders who share the same passion for two wheels. Our commitment to integrity, transparency, and personalized service sets us apart. When you choose Philip Moto Garage, you're not just getting a machine—you're joining a family that rides together.
             </p>
           </div>
         </div>

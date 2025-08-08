@@ -1,7 +1,7 @@
 import AboutUs from "@/pages/home/aboutUs/AboutUs";
 import Brands from "@/pages/home/brands/Brands";
 import CarouselPictureShow from "@/pages/home/carouselPictureShow/CarouselPictureShow";
-import Recommanded from "@/pages/home/recommmandedCarousel/RecommandedCarousel";
+import Recommended from "@/pages/home/recommmandedCarousel/RecommandedCarousel";
 import TellCustomers from "@/pages/home/tellCustomers/TellCustomers";
 import Transections from "@/pages/home/transections/Transections";
 
@@ -10,7 +10,7 @@ function Home() {
     <div>
       <CarouselPictureShow />
       <TellCustomers />
-      <Recommanded />
+      <Recommended />
       <Brands />
       <Transections />
       <AboutUs />

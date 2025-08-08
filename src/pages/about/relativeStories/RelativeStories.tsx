@@ -22,10 +22,7 @@ const RelativeStories = () => {
             </div>
             <div className="w-[100%] h-[100%] px-[5%] flex items-center">
               <p className="md:text-2xl font-bold pb-[30px]">
-                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem
-                ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-                repellat voluptas iure optio molestias at cupiditate sit
-                laudantium laboriosam atque!
+                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;We also offer flexible financing options, trade-ins, and after-sales support to make your experience as smooth as possible. Our goal is to make motorcycle ownership accessible and stress-free, whether you're commuting daily or chasing adventure on the weekends.
               </p>
             </div>
           </div>

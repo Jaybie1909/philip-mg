@@ -29,7 +29,7 @@ interface brandsInterface {
 interface showroomInterface {
   url: string;
   showroomName: string;
-  sine: string;
+  since: string;
 }
 
 interface shopInterface {

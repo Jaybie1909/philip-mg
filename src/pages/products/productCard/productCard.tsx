@@ -43,15 +43,16 @@ const ProductCard = () => {
               </div>
               <div className="text-base flex flex-col">
                 <span className="text-xl font-semibold">
-                  Price : {item.price} THB
+                  Price : {item.price} PHP
                 </span>
-                <span className="text-md my-2">Mile : {item.mile}</span>
+                <span className="text-md my-2">cc : {item.cc}</span>
                 <div className="flex flex-col text-sm">
-                  <span>Down Payment : {item.downPayment} THB</span>
+                  <span>
+                    Down Payment : {(
+                    Number(item.price.replace(/[^\d.]/g, "")) * 0.3
+                    ).toLocaleString()} PHP
+                  </span>
                   <div className="flex justify-between flex-wrap items-center">
-                    <span>
-                      Monthly Payment : {item.monthlyPayment} THB/month
-                    </span>
                     <button
                       className={`mt-[15px] bg-[#6189B4] dis px-2 py-1 rounded-2xl active:scale-105 hover:scale-110`}
                     >

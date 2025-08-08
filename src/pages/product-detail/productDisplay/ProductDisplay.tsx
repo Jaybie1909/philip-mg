@@ -33,14 +33,14 @@ const ProductDisplay = ({ indexID }: { indexID: string | any }) => {
           </div>
           <div className="text-base flex flex-col">
             <span className="text-xl font-semibold">
-              Price : {data[num].price} THB
+              Price : {data[num].price} PHP
             </span>
             <span className="text-md my-2">Mile : {data[num].mile}</span>
             <div className="flex flex-col text-sm">
-              <span>Down Payment : {data[num].downPayment} THB</span>
+              <span>Down Payment : {data[num].downPayment} PHP</span>
               <div className="flex justify-between flex-wrap items-center">
                 <span>
-                  Monthly Payment : {data[num].monthlyPayment} THB/month
+                  Monthly Payment : {data[num].monthlyPayment} PHP/month
                 </span>
                 <button
                   className={`mt-[15px] bg-[#6189B4] dis px-2 py-1 rounded-2xl active:scale-105 hover:scale-110`}

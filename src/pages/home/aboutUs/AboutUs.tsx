@@ -18,12 +18,7 @@ const AboutUs = () => {
         <div className="flex-1 lg:mt-0 mt-3">
           <h2 className="text-5xl font-bold">About Us</h2>
           <p className="pr-[5%] font-semibold py-3 2xl:w-[50%]">
-            &#160;&#160;&#160;&#160;&#160; Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Facere laborum a veritatis corrupti
-            fuga nihil veniam provident labore animi sapiente aperiam, porro
-            mollitia perferendis voluptatem vel corporis eius accusantium fugiat
-            atque aliquam voluptatibus sint? Sed molestiae maxime eum esse
-            soluta.
+            &#160;&#160;&#160;&#160;&#160; At Philip Moto Garage, we believe that every rider deserves a bike that matches their style, needs, and budget. Whether you're a first-time buyer, a seasoned enthusiast, or looking to upgrade, our team is here to guide you through every step—from selection to final ride. We carefully inspect every motorcycle to ensure performance, safety, and satisfaction.
           </p>
           <div>
             <Link to="/about-us" onClick={scrollToTheTopOfThePage}>

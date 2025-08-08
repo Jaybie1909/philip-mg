@@ -11,7 +11,7 @@ const ProfessionalUsedCarVendor = () => {
                 Professional
               </span>
               <span className="text-black text-4xl font-extrabold">
-                Used Car
+                Used Motor
               </span>
               <span className="text-black text-4xl font-extrabold">Vendor</span>
             </div>
@@ -19,7 +19,7 @@ const ProfessionalUsedCarVendor = () => {
           <div className="w-[100%] lg:w-[65%] lg:bg-gray-300 flex justify-evenly mx-auto ">
             <div className="">
               <div className="h-[200px] w-[150px] relative items-center">
-                <div className="font-bold text-[150px] leading-none">8</div>
+                <div className="font-bold text-[150px] leading-none">5</div>
                 <div className="absolute font-semibold text-2xl right-0 bottom-[28.5%]">
                   Years
                 </div>
@@ -30,18 +30,18 @@ const ProfessionalUsedCarVendor = () => {
             </div>
             <div className="">
               <div className="h-[200px] w-[150px] relative items-center">
-                <div className="font-bold text-[150px] leading-none">7</div>
-                <div className="absolute font-semibold text-[21px] right-[4px] bottom-[28.5%]">
-                  Branches
+                <div className="font-bold text-[150px] leading-none">1</div>
+                <div className="absolute ml-1 font-semibold text-[21px] right-[4px] bottom-[28.5%]">
+                  Branch
                 </div>
                 <div className="absolute font-semibold text-[29px] bottom-[10%] ">
-                  In Thailand
+                  In Navotas
                 </div>
               </div>
             </div>
             <div className="">
               <div className="h-[200px] w-[150px] relative items-center">
-                <div className="font-bold text-[150px] leading-none">3</div>
+                <div className="font-bold text-[150px] leading-none">1</div>
                 <div className="absolute font-semibold text-[19px] right-[6px] bottom-[28.5%]">
                   Months
                 </div>
