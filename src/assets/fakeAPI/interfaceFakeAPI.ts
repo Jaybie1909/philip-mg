@@ -10,6 +10,7 @@ interface bikeDataInterface {
   cc: string;
   isAvailable: "Available" | "Booked" | "Sold";
   tags: string[];
+  type: string;
 }
 
 interface relatedBikeInterface {

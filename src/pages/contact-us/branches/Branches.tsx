@@ -33,8 +33,7 @@ const Branches = () => {
                   </h5>
                 </Link>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  &#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Molestias quos impedit eius.
+                  &#160;&#160;&#160;&#160;&#160;&#160;Where Your Ride Meets Expert Care..
                 </p>
                 <Link
                   to={`#`}

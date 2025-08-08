@@ -1,46 +1,94 @@
+import { useState } from "react";
 import { brandList, versionList, year, typeOfBike } from "./searchList";
-import "@/index.css";
+import bgImage from '@/assets/images/shop/relative/1.webp'
 
-const SearchBar = () => {
+
+
+type FilterType = {
+  brand: string;
+  version: string;
+  year: string;
+  type: string;
+};
+
+interface SearchBarProps {
+  onFilterChange: React.Dispatch<React.SetStateAction<FilterType>>;
+}
+
+const SearchBar = ({ onFilterChange }: SearchBarProps) => {
+  const [selectedBrand, setSelectedBrand] = useState("");
+  const [selectedVersion, setSelectedVersion] = useState("");
+  const [selectedYear, setSelectedYear] = useState("");
+  const [selectedType, setSelectedType] = useState("");
+
+  const handleChange = (type: string, value: string) => {
+    if (type === "brand") setSelectedBrand(value);
+    if (type === "version") setSelectedVersion(value);
+    if (type === "year") setSelectedYear(value);
+    if (type === "type") setSelectedType(value);
+
+    onFilterChange((prev: FilterType) => ({
+      ...prev,
+      [type]: value, // ✅ Dynamically update the right filter
+    }));
+  };
+
   return (
-    <div className="bg-[url('src/assets/images/shop/relative/groupTravel.webp')] bg-no-repeat bg-cover ">
+    <div style={{ backgroundImage: `url(${bgImage})` }}>
       <form className="h-[200px] flex justify-evenly items-center px-[5%]">
-        <select className="bg-blue-600 w-[150px] font-semibold capitalize border group border-blue-800 text-white text-sm rounded-2xl block  p-2.5  ">
+        {/* Brand */}
+        <select
+          className="bg-blue-600 w-[150px] font-semibold capitalize border border-blue-800 text-white text-sm rounded-2xl p-2.5"
+          value={selectedBrand}
+          onChange={(e) => handleChange("brand", e.target.value)}
+        >
+          <option value="">All Brands</option>
           {brandList.map((item, index) => (
-            <option key={`brand-key-${index}`} value={index} className="">
+            <option key={index} value={item}>
               {item}
             </option>
           ))}
         </select>
-        <select className="bg-blue-600 w-[150px] font-semibold capitalize border border-blue-800 text-white text-sm rounded-2xl block  p-2.5  ">
-          {versionList.map((item, index) => (
-            <option
-              key={`brand-key-${index}`}
-              value={index}
-              className="hover:bg-slate-400 hover:text-white"
-            >
-              {item.version}
-            </option>
-          ))}
+
+        {/* Version */}
+        <select
+          className="bg-blue-600 w-[150px] font-semibold capitalize border border-blue-800 text-white text-sm rounded-2xl p-2.5"
+          value={selectedVersion}
+          onChange={(e) => handleChange("version", e.target.value)}
+        >
+          <option value="">All Versions</option>
+          {versionList
+            .filter((item) => selectedBrand === "" || item.brand === selectedBrand)
+            .map((item, index) => (
+              <option key={index} value={item.version}>
+                {item.version}
+              </option>
+            ))}
         </select>
-        <select className="bg-blue-600  w-[150px] font-semibold capitalize border border-green-800 text-white text-sm rounded-2xl block  p-2.5  ">
+
+        {/* Year */}
+        <select
+          className="bg-blue-600 w-[150px] font-semibold capitalize border border-green-800 text-white text-sm rounded-2xl p-2.5"
+          value={selectedYear}
+          onChange={(e) => handleChange("year", e.target.value)}
+        >
+          <option value="">All Years</option>
           {year.map((item, index) => (
-            <option
-              key={`brand-key-${index}`}
-              value={index}
-              className="hover:bg-slate-400 hover:text-white"
-            >
+            <option key={index} value={item}>
               {item}
             </option>
           ))}
         </select>
-        <select className="bg-blue-600  w-[150px] font-semibold capitalize border border-blue-800 text-white text-sm rounded-2xl block  p-2.5  ">
+
+        {/* Type */}
+        <select
+          className="bg-blue-600 w-[150px] font-semibold capitalize border border-blue-800 text-white text-sm rounded-2xl p-2.5"
+          value={selectedType}
+          onChange={(e) => handleChange("type", e.target.value)}
+        >
+          <option value="">All Types</option>
           {typeOfBike.map((item, index) => (
-            <option
-              key={`brand-key-${index}`}
-              value={index}
-              className="hover:bg-black hover:text-white"
-            >
+            <option key={index} value={item}>
               {item}
             </option>
           ))}

@@ -10,10 +10,10 @@ import {
 const bikeData: bikeDataInterface[] = [
   {
     pictures: [
-      "/src/assets/images/products/Yamaha_Mio 4810/1.jpg",
-      "/src/assets/images/products/Yamaha_Mio 4810/2.jpg",
-      "/src/assets/images/products/Yamaha_Mio 4810/3.jpg",
-      "/src/assets/images/products/Yamaha_Mio 4810/4.jpg",
+      "/src/assets/images/products/Yamaha_Mio_1/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_1/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_1/3.jpg",
+      "/src/assets/images/products/Yamaha_Mio_1/4.jpg",
     ],
     brand: "Yamaha",
     version: "Mio i",
@@ -24,13 +24,14 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "80,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Yamaha", "Mio"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio i 2019 yellow/photo_2025-08-08_10-39-29.jpg",
-      "/src/assets/images/products/Yamaha Mio i 2019 yellow/photo_2025-08-08_10-39-30.jpg",
-      "/src/assets/images/products/Yamaha Mio i 2019 yellow/photo_2025-08-08_10-39-31.jpg",
+      "/src/assets/images/products/Yamaha_Mio_2/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_2/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_2/3.jpg",
     ],
 
     brand: "Yamaha",
@@ -42,14 +43,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "20,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Yamaha", "Mio"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Honda Beat 2020/photo_2025-08-08_10-39-27.jpg",
-      "/src/assets/images/products/Honda Beat 2020/photo_2025-08-08_10-39-26 (2).jpg",
-      "/src/assets/images/products/Honda Beat 2020/photo_2025-08-08_10-39-28 (2).jpg",
-      "/src/assets/images/products/Honda Beat 2020/photo_2025-08-08_10-39-28.jpg",
+      "/src/assets/images/products/Honda_Beat_1/1.jpg",
+      "/src/assets/images/products/Honda_Beat_1/2.jpg",
+      "/src/assets/images/products/Honda_Beat_1/3.jpg",
+      "/src/assets/images/products/Honda_Beat_1/4.jpg",
     ],
 
     brand: "Honda",
@@ -61,13 +63,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "90,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Honda", "Beat"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio Soul 2018 453/photo_2025-08-08_11-28-41 (2).jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 2018 453/photo_2025-08-08_11-28-40.jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 2018 453/photo_2025-08-08_11-28-41 (3).jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_1/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_1/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_1/3.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_1/4.jpg",
     ],
 
     brand: "Yamaha",
@@ -79,14 +83,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "10,000",
     cc: "125",
     isAvailable: "Sold",
+    type: "Scooter",
     tags: ["Yamaha", "Mio Soul i"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Honda Beat/photo_2025-08-08_10-39-23 (2).jpg",
-      "/src/assets/images/products/Honda Beat/photo_2025-08-08_10-39-22.jpg",
-      "/src/assets/images/products/Honda Beat/photo_2025-08-08_10-39-23.jpg",
-      "/src/assets/images/products/Honda Beat/photo_2025-08-08_10-39-24.jpg",
+      "/src/assets/images/products/Honda_Beat_2/1.jpg",
+      "/src/assets/images/products/Honda_Beat_2/2.jpg",
+      "/src/assets/images/products/Honda_Beat_2/3.jpg",
+      "/src/assets/images/products/Honda_Beat_2/4.jpg",
     ],
 
     brand: "Honda",
@@ -98,14 +103,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "70,000",
     cc: "125",
     isAvailable: "Booked",
+    type: "Scooter",
     tags: ["Honda", "Beat"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio 1303/photo_2025-08-08_10-39-20.jpg",
-      "/src/assets/images/products/Yamaha Mio 1303/photo_2025-08-08_10-39-19.jpg",
-      "/src/assets/images/products/Yamaha Mio 1303/photo_2025-08-08_10-39-21 (2).jpg",
-      "/src/assets/images/products/Yamaha Mio 1303/photo_2025-08-08_10-39-21.jpg",
+      "/src/assets/images/products/Yamaha_Mio_3/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_3/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_3/3.jpg",
+      "/src/assets/images/products/Yamaha_Mio_3/4.jpg",
     ],
 
     brand: "Yamaha",
@@ -117,17 +123,17 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "25,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Yamaha", "Mio i"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Nmax/photo_2025-08-08_10-39-13.jpg",
-      "/src/assets/images/products/Nmax/photo_2025-08-08_10-39-14.jpg",
-      "/src/assets/images/products/Nmax/photo_2025-08-08_10-39-15 (2).jpg",
-      "/src/assets/images/products/Nmax/photo_2025-08-08_10-39-15.jpg",
-      "/src/assets/images/products/Nmax/photo_2025-08-08_10-39-16.jpg",
-      "/src/assets/images/products/Nmax/photo_2025-08-08_10-39-17.jpg",
-      "/src/assets/images/products/Nmax/photo_2025-08-08_10-39-18.jpg",
+      "/src/assets/images/products/Nmax/1.jpg",
+      "/src/assets/images/products/Nmax/2.jpg",
+      "/src/assets/images/products/Nmax/3.jpg",
+      "/src/assets/images/products/Nmax/4.jpg",
+      "/src/assets/images/products/Nmax/5.jpg",
+      "/src/assets/images/products/Nmax/6.jpg",
     ],
 
     brand: "Yamaha",
@@ -139,14 +145,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "40,000",
     cc: "155",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Yamaha", "NMAX V1"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Honda Click 904/photo_2025-08-08_10-39-11.jpg",
-      "/src/assets/images/products/Honda Click 904/photo_2025-08-08_10-39-10.jpg",
-      "/src/assets/images/products/Honda Click 904/photo_2025-08-08_10-39-12 (2).jpg",
-      "/src/assets/images/products/Honda Click 904/photo_2025-08-08_10-39-12.jpg",
+      "/src/assets/images/products/Honda_Click_1/1.jpg",
+      "/src/assets/images/products/Honda_Click_1/2.jpg",
+      "/src/assets/images/products/Honda_Click_1/3.jpg",
+      "/src/assets/images/products/Honda_Click_1/4.jpg",
     ],
     brand: "Honda",
     version: "Click V2",
@@ -157,14 +164,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "80,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Honda", "Click V2"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Honda Click 369/photo_2025-08-08_10-39-08 (2).jpg",
-      "/src/assets/images/products/Honda Click 369/photo_2025-08-08_10-39-06 (2).jpg",
-      "/src/assets/images/products/Honda Click 369/photo_2025-08-08_10-39-08.jpg",
-      "/src/assets/images/products/Honda Click 369/photo_2025-08-08_10-39-09.jpg",
+      "/src/assets/images/products/Honda_Click_2/1.jpg",
+      "/src/assets/images/products/Honda_Click_2/2.jpg",
+      "/src/assets/images/products/Honda_Click_2/3.jpg",
+      "/src/assets/images/products/Honda_Click_2/4.jpg",
     ],
 
     brand: "Honda",
@@ -176,14 +184,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "20,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Honda", "Click V2"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Honda Click v2 2021/photo_2025-08-08_10-39-05 (2).jpg",
-      "/src/assets/images/products/Honda Click v2 2021/photo_2025-08-08_10-39-04.jpg",
-      "/src/assets/images/products/Honda Click v2 2021/photo_2025-08-08_10-39-05.jpg",
-      "/src/assets/images/products/Honda Click v2 2021/photo_2025-08-08_10-39-06.jpg",
+      "/src/assets/images/products/Honda_Click_3/1.jpg",
+      "/src/assets/images/products/Honda_Click_3/2.jpg",
+      "/src/assets/images/products/Honda_Click_3/3.jpg",
+      "/src/assets/images/products/Honda_Click_3/4.jpg",
     ],
 
     brand: "Honda",
@@ -195,13 +204,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "90,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Honda", "Click V2"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio i 2019 yellow/photo_2025-08-08_10-39-29.jpg",
-      "/src/assets/images/products/Yamaha Mio i 2019 yellow/photo_2025-08-08_10-39-30.jpg",
-      "/src/assets/images/products/Yamaha Mio i 2019 yellow/photo_2025-08-08_10-39-31.jpg.jpg",
+      "/src/assets/images/products/Yamaha_Mio_6/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_6/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_6/3.jpg",
+      "/src/assets/images/products/Yamaha_Mio_6/4.jpg",
     ],
 
     brand: "Yamaha",
@@ -213,14 +224,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "10,000",
     cc: "125",
     isAvailable: "Booked",
+    type: "Scooter",
     tags: ["Yamaha", "Mio i"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio Soul 62767/photo_2025-08-08_10-39-25 (2).jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 62767/photo_2025-08-08_10-39-24 (2).jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 62767/photo_2025-08-08_10-39-25.jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 62767/photo_2025-08-08_10-39-26.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_2/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_2/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_2/3.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_2/4.jpg",
     ],
 
     brand: "Yamaha",
@@ -232,14 +244,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "70,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Yamaha", "Mio Soul"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio Soul 2018 453/photo_2025-08-08_11-28-41 (2).jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 2018 453/photo_2025-08-08_11-28-40.jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 2018 453/photo_2025-08-08_11-28-41 (3).jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 2018 453/photo_2025-08-08_11-28-41.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_1/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_1/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_1/3.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_1/4.jpg",
     ],
 
     brand: "Yamaha",
@@ -251,13 +264,14 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "25,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Yamaha", "Mio Soul i"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio Orange/photo_2025-08-08_11-24-52 (2).jpg",
-      "/src/assets/images/products/Yamaha Mio Orange/photo_2025-08-08_11-24-52.jpg",
-      "/src/assets/images/products/Yamaha Mio Orange/photo_2025-08-08_11-24-53.jpg",
+      "/src/assets/images/products/Yamaha_Mio_4/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_4/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_4/3.jpg",
     ],
 
     brand: "Yamaha",
@@ -269,14 +283,15 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "40,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Yamaha", "Mio"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio 2018 803/photo_2025-08-08_11-24-49 (2).jpg",
-      "/src/assets/images/products/Yamaha Mio 2018 803/photo_2025-08-08_11-24-49.jpg",
-      "/src/assets/images/products/Yamaha Mio 2018 803/photo_2025-08-08_11-24-50.jpg",
-      "/src/assets/images/products/Yamaha Mio 2018 803/photo_2025-08-08_11-24-51.jpg",
+      "/src/assets/images/products/Yamaha_Mio_5/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_5/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_5/3.jpg",
+      "/src/assets/images/products/Yamaha_Mio_5/4.jpg",
     ],
     brand: "Yamaha",
     version: "Mio",
@@ -287,13 +302,14 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "80,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["BMW", "GSA", "touring"],
   },
   {
     pictures: [
-      "/src/assets/images/products/Yamaha Mio Soul 2020 green/photo_2025-08-08_11-24-48 (2).jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 2020 green/photo_2025-08-08_11-24-48 (3).jpg",
-      "/src/assets/images/products/Yamaha Mio Soul 2020 green/photo_2025-08-08_11-24-48.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_3/1.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_3/2.jpg",
+      "/src/assets/images/products/Yamaha_Mio_Soul_3/3.jpg",
     ],
 
     brand: "Yamaha",
@@ -305,6 +321,7 @@ const bikeData: bikeDataInterface[] = [
     downPayment: "20,000",
     cc: "125",
     isAvailable: "Available",
+    type: "Scooter",
     tags: ["Yamaha", "Mio Soul"],
   },
   
@@ -312,33 +329,33 @@ const bikeData: bikeDataInterface[] = [
 
 const coverCarosel: coverCaroselInterface[] = [
   {
-    url: "/src/assets/images/posters/motor10.jpg",
+    url: "/src/assets/images/posters/1.jpg",
     tags: ["bigbike"],
   },
   {
-    url: "src/assets/images/posters/motor9.jpg",
+    url: "src/assets/images/posters/2.jpg",
     tags: ["bigbike"],
   },
   {
-    url: "src/assets/images/posters/motor7.webp",
+    url: "src/assets/images/posters/3.webp",
     tags: ["bigbike"],
   },
   {
-    url: "src/assets/images/posters/motor6.avif",
+    url: "src/assets/images/posters/4.avif",
     tags: ["bigbike"],
   },
   {
-    url: "src/assets/images/posters/motor3.jpg",
+    url: "src/assets/images/posters/5.jpg",
     tags: ["bigbike"],
   },
   {
-    url: "src/assets/images/posters/motor4.avif",
+    url: "src/assets/images/posters/6.jpg",
     tags: ["bigbike"],
   },
 ];
 
 const brands: brandsInterface[] = [
-  { url: "src/assets/images/brands/bmw_PNG99531.png", brandName: "BMW" },
+  { url: "src/assets/images/brands/bmw.png", brandName: "BMW" },
   { url: "src/assets/images/brands/ducati.png", brandName: "Ducati" },
   { url: "src/assets/images/brands/honda.png", brandName: "Honda" },
   { url: "src/assets/images/brands/kawasaki.png", brandName: "Kawasaki" },
@@ -363,13 +380,13 @@ const showroom: showroomInterface[] = [
 
 const frontShop: shopInterface[] = [
   {
-    url: "src/assets/images/shop/photo_2025-08-08_12-35-02.jpg",
+    url: "src/assets/images/shop/2.jpg",
     alt: "Philip Moto Garage",
     name: "Philip Moto Garage",
     phone: "0969 574 1682",
   },
   {
-    url: "src/assets/images/shop/photo_2025-08-08_12-35-03.jpg",
+    url: "src/assets/images/shop/3.jpg",
     alt: "Philip Moto Garage",
     name: "Philip Moto Garage",
     phone: "0969 574 1682",
@@ -379,25 +396,25 @@ const frontShop: shopInterface[] = [
 
 const maintenanceShop: shopInterface[] = [
   {
-    url: "src/assets/images/shop/maintenance/188-Motorcycle-Maintenance-Repair.jpg",
+    url: "src/assets/images/shop/maintenance/1.jpg",
     alt: "maintenance shop",
     name: "Chiang Mai Bigbike & Travel",
     phone: "063-194-2344",
   },
   {
-    url: "src/assets/images/shop/maintenance/istockphoto-1318840986-170667a.webp",
+    url: "src/assets/images/shop/maintenance/2.webp",
     alt: "maintenance shop",
     name: "Bangkok The Best Group BB",
     phone: "025-488-6841",
   },
   {
-    url: "src/assets/images/shop/maintenance/POWR SCC 03648_v2.jpg",
+    url: "src/assets/images/shop/maintenance/3.jpg",
     alt: "maintenance shop",
     name: "maintenance shop",
     phone: "025-488-6841",
   },
   {
-    url: "src/assets/images/shop/maintenance/Service_Full_2_875_v5-e1625796185711.jpg",
+    url: "src/assets/images/shop/maintenance/4.jpg",
     alt: "maintenance shop",
     name: "Phuket Bike & Travel",
     phone: "046-248-6471",
@@ -406,7 +423,7 @@ const maintenanceShop: shopInterface[] = [
 
 const relativePic: relativePicInterface[] = [
   {
-    url: "src/assets/images/shop/relative/groupTravel.webp",
+    url: "src/assets/images/shop/relative/1.webp",
     alt: "group travel",
     name: "group travel",
   },

@@ -1,13 +1,12 @@
-import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
 import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
 import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
 import { Link } from "react-router-dom";
 
-const ProductCard = () => {
-  const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
+// ✅ Accept products prop
+const ProductCard = ({ products }: { products: bikeDataInterface[] }) => {
   return (
     <div className="flex flex-wrap justify-center items-start gap-[15px] p-[15px] my-[20px] transition-all duration-300 ease-in-out">
-      {data.map((item, index) => {
+      {products.map((item, index) => {
         return (
           <div
             key={`product-card-${index}`}
@@ -48,9 +47,11 @@ const ProductCard = () => {
                 <span className="text-md my-2">cc : {item.cc}</span>
                 <div className="flex flex-col text-sm">
                   <span>
-                    Down Payment : {(
-                    Number(item.price.replace(/[^\d.]/g, "")) * 0.3
-                    ).toLocaleString()} PHP
+                    Down Payment :{" "}
+                    {(
+                      Number(item.price.replace(/[^\d.]/g, "")) * 0.3
+                    ).toLocaleString()}{" "}
+                    PHP
                   </span>
                   <div className="flex justify-between flex-wrap items-center">
                     <button
@@ -71,7 +72,7 @@ const ProductCard = () => {
                     key={`tag-${tag}-${index}`}
                     className="inline-block bg-gray-200 rounded-full px-3 py-1 text-[10px] md:text-sm font-semibold text-gray-700 mr-2 mb-2"
                   >
-                    <Link to={`#`}>#{tag}</Link>
+                    <Link to="#">#{tag}</Link>
                   </span>
                 );
               })}

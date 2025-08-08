@@ -1,5 +1,4 @@
 const brandList = [
-  "All Brand",
   "BMW",
   "Ducati",
   "KTM",
@@ -10,7 +9,6 @@ const brandList = [
 ];
 
 const versionList = [
-  { brand: "All brand", version: "All version" },
   { brand: "BMW", version: "GSA" },
   { brand: "BMW", version: "GS" },
   { brand: "BMW", version: "S1000RR" },
@@ -42,7 +40,6 @@ const versionList = [
 ];
 
 const year = [
-  "Year",
   "2023",
   "2022",
   "2021",
