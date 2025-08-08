@@ -4,7 +4,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { scrollToTheTopOfThePage } from "../ScrollToTheTopOfThePage.hook";
-import logo from "../../assets/images/logo.jpg";
+const logo = "/images/logo.jpg";
 
 
 function Header() {

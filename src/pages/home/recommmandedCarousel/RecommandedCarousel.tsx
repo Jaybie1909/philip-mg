@@ -1,10 +1,10 @@
-import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
-import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
-import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
+import { FakeAPIRespond } from "../../../assets/fakeAPI/FakeAPIRespond";
+import { bikeDataInterface } from "../../../assets/fakeAPI/interfaceFakeAPI";
+import { scrollToTheTopOfThePage } from "../../../components/ScrollToTheTopOfThePage.hook";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const RecommandedCarousel = () => {
+const RecommendedCarousel = () => {
   const data: bikeDataInterface[] = FakeAPIRespond.data.bikeData;
   const [current, setCurrent] = useState(0);
   const [isOver, setIsOver] = useState(false);
@@ -25,14 +25,16 @@ const RecommandedCarousel = () => {
   };
 
   useEffect(() => {
-    let inteval_ID: any;
-    if (!isOver) {
-      inteval_ID = setInterval(fwCarousel, 1000);
-      return () => {
-        clearInterval(inteval_ID);
-      };
-    } else clearInterval(inteval_ID);
-  }, [current]);
+  let intervalId: NodeJS.Timeout; // Proper type for interval ID
+  
+  if (!isOver) {
+    intervalId = setInterval(fwCarousel, 1000);
+  }
+
+  return () => {
+    clearInterval(intervalId); // Cleanup on unmount or dependency change
+  };
+}, [current, isOver, fwCarousel]); // Include all dependencies
 
   return (
     <div>
@@ -132,4 +134,4 @@ const RecommandedCarousel = () => {
   );
 };
 
-export default RecommandedCarousel;
+export default RecommendedCarousel;

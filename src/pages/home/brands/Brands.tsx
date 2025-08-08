@@ -1,6 +1,6 @@
-import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
-import { brandsInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
-import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
+import { FakeAPIRespond } from "../../../assets/fakeAPI/FakeAPIRespond";
+import { brandsInterface } from "../../../assets/fakeAPI/interfaceFakeAPI";
+import { scrollToTheTopOfThePage } from "../../../components/ScrollToTheTopOfThePage.hook";
 import { Link } from "react-router-dom";
 
 const Brands = () => {

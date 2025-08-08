@@ -3,10 +3,10 @@ import ProductDisplay from "./productDisplay/ProductDisplay";
 import { useParams } from "react-router-dom";
 
 const ProductDetail = () => {
-  const { indexID } = useParams();
+  const { indexID } = useParams<{ indexID: string }>();
   return (
     <div>
-      <ProductDisplay indexID={indexID} />
+      <ProductDisplay indexID={indexID || "0"} /> {/* Default to "0" if undefined */}
       <CompanyAddress />
     </div>
   );

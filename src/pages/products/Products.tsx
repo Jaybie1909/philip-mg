@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ProductCard from "./productCard/productCard";
 import SearchBar from "./searchBar/SearchBar";
-import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
-import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { FakeAPIRespond } from "../../assets/fakeAPI/FakeAPIRespond";
+import { bikeDataInterface } from "../../assets/fakeAPI/interfaceFakeAPI";
 
 // ✅ Use actual data
 const allBikes: bikeDataInterface[] = FakeAPIRespond.data.bikeData;

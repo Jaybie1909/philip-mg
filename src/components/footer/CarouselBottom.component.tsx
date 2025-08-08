@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
-import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { FakeAPIRespond } from "../../assets/fakeAPI/FakeAPIRespond";
+import { bikeDataInterface } from "../../assets/fakeAPI/interfaceFakeAPI";
 import { Link } from "react-router-dom";
 import { scrollToTheTopOfThePage } from "../ScrollToTheTopOfThePage.hook";
 

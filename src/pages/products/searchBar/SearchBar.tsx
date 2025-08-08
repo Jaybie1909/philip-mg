@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { brandList, versionList, year, typeOfBike } from "./searchList";
-import bgImage from '@/assets/images/shop/relative/1.webp'
+const bgImage = '/images/shop/relative/1.webp';
+
 
 
 

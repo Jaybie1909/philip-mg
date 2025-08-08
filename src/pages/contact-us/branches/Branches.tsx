@@ -1,5 +1,5 @@
-import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
-import { shopInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { FakeAPIRespond } from "../../../assets/fakeAPI/FakeAPIRespond";
+import { shopInterface } from "../../../assets/fakeAPI/interfaceFakeAPI";
 import { FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

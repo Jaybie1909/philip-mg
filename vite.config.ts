@@ -3,11 +3,24 @@ import react from '@vitejs/plugin-react';
 import * as path from 'path';
 
 export default defineConfig({
-  base: './', // 👈 this is the key change
+  assetsInclude: ['**/*.webp'],
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@assets': path.resolve(__dirname, './src/assets'),
+    },
+  },
+  base: './',
+  build: {
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          // Keep original folder structure in dist
+          const dir = assetInfo.name?.split('/').slice(0, -1).join('/') || '';
+          return `assets/images/${dir}/[name].[hash].[ext]`;
+        },
+      },
     },
   },
 });

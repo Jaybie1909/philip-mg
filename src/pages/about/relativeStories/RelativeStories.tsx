@@ -1,5 +1,5 @@
-import { FakeAPIRespond } from "@/assets/fakeAPI/FakeAPIRespond";
-import { relativePicInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
+import { FakeAPIRespond } from "../../../assets/fakeAPI/FakeAPIRespond";
+import { relativePicInterface } from "../../../assets/fakeAPI/interfaceFakeAPI";
 
 const RelativeStories = () => {
   const data: relativePicInterface[] = FakeAPIRespond.data.relativePic;

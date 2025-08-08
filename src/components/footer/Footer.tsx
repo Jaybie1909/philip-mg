@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
-import CarouselBottom from "@/components/footer/CarouselBottom.component";
+import CarouselBottom from "./CarouselBottom.component";
 import { Link } from "react-router-dom";
 import { scrollToTheTopOfThePage } from "../ScrollToTheTopOfThePage.hook";
 

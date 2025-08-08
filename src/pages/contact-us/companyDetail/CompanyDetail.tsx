@@ -1,4 +1,4 @@
-import CompanyCard from "@/components/CompanyCard.component";
+import CompanyCard from "../../../components/CompanyCard.component";
 
 const CompanyDetail = () => {
   return (
@@ -11,7 +11,7 @@ const CompanyDetail = () => {
         </div>
         <div className="md:w-[50%] w-[100%] h-[100%] bg-gray-300 flex justify-center items-center">
           <div className="w-[90%] h-[90%] overflow-hidden">
-            <div className="bg-[url('/src/assets/images/shop/1.jpg')] bg-no-repeat bg-cover w-[1100px] h-[1000px] md:translate-x-[-45%] translate-x-[-50%] lg:translate-x-[-38%] sm:translate-x-[-43%] sm:translate-y-[-43%]"></div>
+            <div className="bg-[url('/images/shop/1.jpg')] bg-no-repeat bg-cover w-[1100px] h-[1000px] md:translate-x-[-45%] translate-x-[-50%] lg:translate-x-[-38%] sm:translate-x-[-43%] sm:translate-y-[-43%]"></div>
           </div>
         </div>
       </div>

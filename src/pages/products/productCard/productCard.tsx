@@ -1,5 +1,5 @@
-import { bikeDataInterface } from "@/assets/fakeAPI/interfaceFakeAPI";
-import { scrollToTheTopOfThePage } from "@/components/ScrollToTheTopOfThePage.hook";
+import { bikeDataInterface } from "../../../assets/fakeAPI/interfaceFakeAPI";
+import { scrollToTheTopOfThePage } from "../../../components/ScrollToTheTopOfThePage.hook";
 import { Link } from "react-router-dom";
 
 // ✅ Accept products prop
